@@ -1,4 +1,9 @@
-import { Mesh, PerspectiveCamera, PlaneGeometry, Scene } from "three";
+import {
+	Mesh,
+	PerspectiveCamera,
+	PlaneGeometry,
+	Scene,
+} from "three";
 import { color } from "three/tsl";
 import { NodeMaterial, WebGPURenderer } from "three/webgpu";
 
@@ -9,7 +14,7 @@ export const getViewerState = (el: HTMLCanvasElement) => {
 
 	// camera
 	const camera = new PerspectiveCamera(75, aspect, 0.1, 10);
-  camera.position.z = 1;
+	camera.position.z = 1;
 	camera.lookAt(0, 0, 0);
 
 	// renderer
